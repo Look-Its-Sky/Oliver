@@ -1,5 +1,4 @@
 |setup| ./modules/setup.py
-|updatehost| ./modules/updatehost.py
 |test| ./modules/test.py
 |updateoliver| ./modules/updateoliver.py
 |selfbackup| ./modules/selfbackup.py
