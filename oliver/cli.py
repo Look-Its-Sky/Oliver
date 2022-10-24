@@ -2,7 +2,6 @@ import os
 import platform
 
 #CLI Interface
-
 if platform.system() != "Linux":
     ans = input("You are running on " + platform.system() + ". \nThis OS may not support or function well with this script. \nIf you think this is a mistake then press enter to continue.")
 
