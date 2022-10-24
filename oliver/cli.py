@@ -32,4 +32,4 @@ while True:
 
     #Regular Oliver Shell
     else:
-        os.system("python3 ./interpeter.py " + cmd)
+        os.system("python3 ./interpreter.py " + cmd)
