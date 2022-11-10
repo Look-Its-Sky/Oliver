@@ -1,5 +1,4 @@
 import sys, os
-from glob import glob
 from subprocess import call
 
 if not sys.argv[1]:
