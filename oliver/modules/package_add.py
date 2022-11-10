@@ -11,7 +11,8 @@ path = sys.argv[1]
 '''
 file struct:
     <root>
-    init.py
+    init.py -- for installing
+    deinit.py -- for uninstalling
         resources:
             <whatever resources are referenced>
 '''

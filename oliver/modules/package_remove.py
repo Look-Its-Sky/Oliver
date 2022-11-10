@@ -6,3 +6,5 @@ if not sys.argv[1]:
     print("Invalid Package Path")
     exit()
 
+path = sys.argv[1]
+print("Process returned with code " + call(path + "/deinit.py"))
