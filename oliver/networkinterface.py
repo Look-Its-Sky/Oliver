@@ -3,7 +3,7 @@ import socket
 HOSTNAME = "127.0.0.1"
 PORT = 6500
 
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as f:
+with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOSTNAME, PORT))
     s.listen()
 
