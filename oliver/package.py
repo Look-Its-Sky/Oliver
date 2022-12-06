@@ -13,7 +13,6 @@ if any(i in sys.argv[1] for i in valid_commands):
     '''use init.py as install script'''
     if any(ii in sys.argv[1] for ii in ['-a', '--add']):
         print("Process returned with code ", call(path + "/init.py"))
-    
 
     '''use deinit.py as uninstall script'''
     if any(ii in sys.argv[1] for ii in ['-r', '--remove']):
