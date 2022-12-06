@@ -1,5 +1,7 @@
 import os
 
+#TODO and NOTE: this was written several years ago by a 15 year old me..... i have to redo it
+
 #Asks if any third party modules are installed
 while True:
     ismergeneeded = input("Does the modules.txt have any third party modules referenced? (y/n)")

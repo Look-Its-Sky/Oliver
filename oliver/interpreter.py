@@ -1,24 +1,17 @@
-import os
-from os import path
-import sys
+import os, sys, glob
 
-def checkandexec(cmd):
-    f = open(".modules", "r")
-
-    #Only Supports Python3
-    for x in f:
-        if x.find(str("|" + cmd + "|")) != -1: #looks for parameter in modules.txt
-            os.system("python3 " + x.split("| ")[1])#Found Line Executing Path
-
-        f.close()
-        exit()
-
-    print("Command Not Found")
-
-#Gives Everything execute permissions when the program is started with --fix-permissions
 if sys.argv[1] == "--fix-permissions":
-    os.system("chmod +x ./modules/*.py")
+    os.system("chmod +x modules/*")
 
-#Otherwise it checks for the command
-else:
-    checkandexec(str(sys.argv[1]))
+for i in glob.glob("modules/"):
+    if i == sys.argv[1]:
+        ending = str(i).split('.')[1]
+
+        if ending == '.py':
+            os.system("python3 ", i)
+
+        else:
+            call(i)
+
+    else:
+        print("Command Not Found")
