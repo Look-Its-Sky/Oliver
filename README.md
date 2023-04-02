@@ -12,6 +12,5 @@
 
 <code>
   import os
-  
   os.system("./path/to/executable")
 </code>
